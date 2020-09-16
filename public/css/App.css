@@ -1,0 +1,715 @@
+body
+{ font-family: 'Taviraj', serif;
+    margin: 0; 
+}
+.App
+{ 
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.header
+{
+    width: 90%;
+    padding: 20px;
+    height: fit-content;
+  display: flex;
+
+      
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:link {
+    color:black;
+    }
+    a:visited {
+    color:black;
+    }
+    a:hover {
+    color: black;
+    }
+#title
+{
+    font-size: 3.5rem;
+    margin-top: auto;
+  margin-bottom: auto;
+    padding-left: 0.2rem;
+    color:#333;
+   
+}
+
+
+
+.navitemname
+{
+    padding-top: 10px;
+    font-family: 'Taviraj', serif;
+    font-size: 1.2rem;
+    color: #333;   
+}
+.navitem:hover .navitemname
+{
+   color: gray;
+}
+.cmpnyicon
+{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+}
+.titlecontainer
+{   display: flex;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    flex: 1;
+}
+.headerimg
+{
+    
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+
+}
+
+.HeaderContent
+{
+   
+    margin-top: 5rem;
+   text-align: center;
+   color: #333;
+  
+    
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.HeaderContent .contentchange
+{
+    
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3.4rem;
+}
+.HeaderContent .contentchangesmall
+{
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+.contentchange{
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+.headerbutton
+{
+    margin-top: 1rem;
+    text-align: center;
+}
+ .middle > .container, .middle > .tcontainer
+{
+    padding:5px 20px;
+} 
+.middletext
+{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 400;
+    color:#333;
+    font-family: 'Taviraj', serif;
+    text-align: center;
+}
+
+.navbar
+{
+    
+    margin-top: 1.5rem;
+   
+}
+
+ul{
+    list-style: none;
+}
+#navcontainer
+{
+    
+    overflow: hidden;
+    max-height: 0;
+    clear: both;
+    margin-right: 5rem;
+    transition: max-height .2s ease-out;
+    
+}
+li{
+    text-decoration: none;
+    
+    margin-right: 2.5rem;
+}
+  
+.menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding:40px 30px;
+    position: relative;
+    user-select: none;
+  }
+ .menu-icon .navicon {
+    background: rgb(78, 76, 76);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  
+.menu-icon .navicon:before,
+ .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+.menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+ .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+
+  .menu-btn:checked ~ #navcontainer {
+    max-height: 350px;
+    
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.middle
+{
+    width: 100%;
+
+        flex: 1;
+   
+    
+}
+.tcontainer
+{
+    margin-top: 60px;
+}
+.middleHeading
+{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    font-family: 'Taviraj', serif;
+}
+
+.wrapper{
+  
+ 
+    display: flex;
+  
+    height: max-content;
+   
+}
+.card{
+    flex: 1;
+    margin: 60px; 
+    padding: 20px;
+    height: 340px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height:100%;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+}
+.descriptions{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    display: none;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+.card:hover .descriptions{
+    left:0px;
+    display: block;
+    transition: all 1s ease-in-out;
+    clip-path: circle(75%);
+}
+.card:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(.97);
+}
+.card:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+.card p{
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding: 5px;
+    color: #333;
+    font-weight: 400;
+}
+
+.blocks
+{   width: 100%;
+    height: 25%;
+    background-color: black;
+
+    margin-bottom: 20px;
+}
+.blocks .text
+{
+    font-size: 1.5rem;
+    text-align: center;
+    color: hotpink;
+    padding: 30px;
+}
+
+.cont
+{
+    margin: 30px;
+}
+
+.test-card
+{
+   
+    height: fit-content;
+    margin:2vh;
+    display: flex;
+    
+}
+
+.hr{
+    border-style: dotted none none none;
+    border-top-width: 8px;
+    color:#333;
+    width: 6%;
+    
+    margin:20px auto;
+    
+   
+
+}
+.bio
+{
+    margin:auto 10px ;
+
+    
+   flex:1;
+ 
+}
+.lastb
+{
+    margin: 2rem auto;
+}
+.testcontent
+{
+    
+    flex:3;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.testcontent > .container
+{
+  
+   flex: 1;
+  
+   
+}
+.container > .text
+{
+    
+    margin-top: 2px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+.dp
+{
+   display: grid;
+   width:150px;
+   height: 150px;
+   margin-top: 10px; 
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.name
+{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 5px;
+    color: #333;
+}
+.bio > .post
+{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 200;
+}
+.bio > .company
+{
+    font-size: 1.2rem;
+  
+    text-align: center;
+    font-weight: 200;
+    line-height: 30px;
+  
+}
+.videocard
+{   display: grid;
+    text-align: center;
+    width: 30%;
+    margin:15px auto;
+    height: 90%;
+ 
+    
+}
+@media only screen and (min-width: 70em) {
+    #navcontainer {
+        clear: none;  
+        float: right;      
+        max-height: none;
+        
+      }
+      .menu-icon
+      {
+          display: none;
+      }
+      li {
+        float: left;
+        
+      }
+      
+   
+} 
+
+
+
+.footer {
+	width: 100%;
+	background: #00121b;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 
+	 display: flex;
+    justify-content:space-evenly;
+	 box-sizing: border-box;
+	
+ }
+
+.footer-items {
+    
+    padding:10px;
+    margin-top: 10px;
+	box-sizing: border-box;
+    color: #fff;
+    
+
+}
+
+.footer-items p {
+	font-size: 1rem;
+	text-align: justify;
+	line-height: 25px;
+	color: #fff;
+}
+
+.footer-items h1 {
+    font-weight: 400;
+    font-size: 2rem;
+	color: #fff;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: #ff9800;
+	color: #ff9800;
+	background-color: #ff9800;
+	border: 0px;
+}
+
+
+.footer-items  > a{
+    font-size: 1.2rem;
+    margin:2vw;
+    display: block;
+    color: #fff;
+}
+.social-media > a
+{
+    margin:0.5vw;
+}
+
+.footerimg
+{
+    width: 20px;
+    height: 20px;
+    margin:20px 8px;
+}
+.footer-items a:hover
+ {
+	color: #ff9800;
+}
+
+.social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+    display:flex;   
+    justify-content: space-around;
+    
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+
+
+.social-media img:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #00121b;
+	color: #fff;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.item
+{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+
+}
+.items
+{
+    padding: 20px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.itemname
+{
+font-size: 1rem;
+text-align: center;
+margin-top: 5px;
+color: white;
+opacity: 0.4;
+font-family: 'Comfortaa', cursive;
+font-weight: 700;
+}
+.itemimg
+{   display: grid;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    height: 80px;
+}
+.vid-div
+{
+  flex: 1;
+ margin: 10px;
+}
+
+
+@media only screen and (max-width: 70em) {
+    .vid-div
+    {
+        height: 90%;
+        
+    }
+   .testcontent > .container
+     {
+       
+         display: none;
+         
+        
+     }
+ 
+    
+     .header
+     {
+         flex-direction: column;
+     }
+     .HeaderContent .contentchange
+     {
+         font-size: 5vw;
+     }
+     .HeaderContent .contentchangesmall
+     {
+         font-size: 4vw;
+     }
+     .HeaderContent
+     {
+         font-size: 1rem;
+        line-height: 7vw;
+         margin-top: 0;
+         
+     }
+   .headerimg
+   {
+    
+       margin-top: 8px;
+       height: 50vh;
+       width: 80vw;
+       
+      
+   }
+   .card p
+   {
+       font-size: 3vw;
+   }
+   .cmpnyicon
+   {
+       width: 2rem;
+       height: 2rem;
+   }
+ 
+  
+   #title
+   {
+       font-size:7vw;
+   }
+ .menu-icon
+ {
+     display: block;
+ }
+ .wrapper
+ {
+     flex-direction: column;
+ 
+ }
+ .card
+ {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5px;
+     width: 60vw;
+     height: 30vh;
+ }
+  .footer-items h1
+  {
+      font-size: 3vh;
+     
+   
+  }
+  .middleHeading
+  {
+      font-size:2rem;
+  }
+  .tcontainer
+  {
+      margin-top: 2vh;
+      padding: 20px;
+  }
+  .dp{
+      width: 75px;
+      height: 75px;
+    
+      
+  }
+  
+  .middletext
+  {
+      font-size:3vw;
+     
+  }
+
+  .videocard
+  {
+     
+      width: 90%;
+     height: 90%;
+     
+    
+  }
+ .bio > .name
+  {
+      font-size: 4vw;
+     line-height: normal;
+
+  }
+ 
+  .bio > .post,.bio > .company
+  {
+      font-size: 2vw;
+      margin-top: 4px;
+      line-height: normal;
+     
+  }
+  .navitemname
+  {
+      font-size: 5vw;
+
+  }
+  
+  .footer-items p, .footer-items a{
+      font-size: 1.5vw;
+      line-height: normal;
+  }
+
+  
+ }
