@@ -21,9 +21,10 @@ const useStyles = makeStyles({
     {
         fontFamily:'Taviraj',
        textTransform:'initial',
+       textDecorationLine:"underline",
       fontWeight:'400',
       fontSize:'20px',
-      color:'blue'
+      color:'black'
 
     }
   });
