@@ -22,7 +22,7 @@ function Header()
             <img src="images/headerimg.png" alt="#bg" className="headerimg"/>
             <div className="HeaderContent">
                 
-            <a href="#cf" className="contentchange">Leader Classes  harnesses </a>the world’s best <a href="#h" className=""> Career Advancement</a> & Leadership Development resources, helping           you gain Expert Knowledge, Practical Guidance & Actionable Insights from Extraordinary Leaders & World          Class Institutions through Specialized,  Affordable, Online & Offline Programs custom-crafted to <a href="#er" className="contentchangesmall">Accelerate             your Career</a> & Business Success while transforming you into a better & more effective Leader.
+            <a href="#cf" className="contentchange">Leader Classes  harnesses </a>the world’s best <a href="#h" className=""> Career Advancement</a> & Leadership Development resources, helping           you gain Expert Knowledge, Practical Guidance & Actionable Insights from Extraordinary Leaders & World          Class Institutions through Specialized,  Affordable, Online & Offline Programs custom-crafted to <a href="#er" className="">Accelerate             your Career</a> & Business Success while transforming you into a better & more effective Leader.
             <div className="headerbutton">
             <Button className={classes.root} href="https://www.leaderclasses.com/career-excellence-leadership-program" variant="contained" >Sign Up & know more</Button>
                 </div>
